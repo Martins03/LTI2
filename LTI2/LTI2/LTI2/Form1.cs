@@ -114,7 +114,7 @@ namespace LTI2
         }
         private void CriarInterfacePods()
         {
-            panel5.Controls.Clear(); // Limpa o conteúdo do painel principal
+            mainContentPanel.Controls.Clear(); // Limpa o conteúdo do painel principal
 
             txtNamespace = new TextBox
             {
@@ -140,9 +140,9 @@ namespace LTI2
                 AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
             };
 
-            panel5.Controls.Add(txtNamespace);
-            panel5.Controls.Add(btnListarPods);
-            panel5.Controls.Add(dgvPods);
+            mainContentPanel.Controls.Add(txtNamespace);
+            mainContentPanel.Controls.Add(btnListarPods);
+            mainContentPanel.Controls.Add(dgvPods);
         }
 
         private async void BtnListarPods_Click(object sender, EventArgs e)
@@ -192,7 +192,7 @@ namespace LTI2
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            CriarInterfaceDashboard();
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -241,6 +241,11 @@ namespace LTI2
         }
 
         private void button4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_4(object sender, EventArgs e)
         {
 
         }
