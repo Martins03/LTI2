@@ -1,0 +1,10 @@
+C:\Users\tomas\Documents\GitHub\LTI2\LTI2\LTI2\bin\Debug\LTI2.exe.config
+C:\Users\tomas\Documents\GitHub\LTI2\LTI2\LTI2\bin\Debug\LTI2.exe
+C:\Users\tomas\Documents\GitHub\LTI2\LTI2\LTI2\bin\Debug\LTI2.pdb
+C:\Users\tomas\Documents\GitHub\LTI2\LTI2\LTI2\obj\Debug\LTI2.csproj.AssemblyReference.cache
+C:\Users\tomas\Documents\GitHub\LTI2\LTI2\LTI2\obj\Debug\LTI2.Form1.resources
+C:\Users\tomas\Documents\GitHub\LTI2\LTI2\LTI2\obj\Debug\LTI2.Properties.Resources.resources
+C:\Users\tomas\Documents\GitHub\LTI2\LTI2\LTI2\obj\Debug\LTI2.csproj.GenerateResource.cache
+C:\Users\tomas\Documents\GitHub\LTI2\LTI2\LTI2\obj\Debug\LTI2.csproj.CoreCompileInputs.cache
+C:\Users\tomas\Documents\GitHub\LTI2\LTI2\LTI2\obj\Debug\LTI2.exe
+C:\Users\tomas\Documents\GitHub\LTI2\LTI2\LTI2\obj\Debug\LTI2.pdb
