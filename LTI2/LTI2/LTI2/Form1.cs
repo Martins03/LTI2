@@ -56,7 +56,7 @@ namespace LTI2
                 Location = new Point(20, 20),
                 AutoSize = true
             };
-            panel5.Controls.Add(lblTitulo);
+            mainContentPanel.Controls.Add(lblTitulo);
 
             var dados = await ObterResumoCluster();
 
