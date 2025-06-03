@@ -55,6 +55,8 @@ namespace LTI2
             {
                 var response = HttpClient.GetAsync($"{BaseUrl}/api/v1/nodes").Result;
                 response.EnsureSuccessStatusCode();
+                MessageBox.Show("Login bem-sucedido!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
 
                 DialogResult = DialogResult.OK;
                 Close();

@@ -39,8 +39,6 @@ namespace LTI2
                 var response = await _httpClient.GetAsync($"{_baseUrl}/api/v1/nodes");
                 response.EnsureSuccessStatusCode();
 
-                var content = await response.Content.ReadAsStringAsync();
-                MessageBox.Show("Ligação bem sucedida!\n" + content.Substring(0, 300));
             }
             catch (Exception ex)
             {
