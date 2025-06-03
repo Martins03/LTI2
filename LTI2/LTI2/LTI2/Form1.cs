@@ -49,7 +49,7 @@ namespace LTI2
         }
         private async void CriarInterfaceDashboard()
         {
-            panel5.Controls.Clear();
+            mainContentPanel.Controls.Clear();
 
             var lblTitulo = new Label
             {
@@ -237,7 +237,7 @@ namespace LTI2
 
         private void button1_Click_3(object sender, EventArgs e)
         {
-
+            CriarInterfaceDashboard();
         }
 
         private void button4_Click_1(object sender, EventArgs e)
