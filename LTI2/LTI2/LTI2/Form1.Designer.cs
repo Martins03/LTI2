@@ -130,6 +130,7 @@
             this.button4.TabIndex = 6;
             this.button4.Text = "Pods";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // button3
             // 
@@ -172,6 +173,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.button1.Location = new System.Drawing.Point(30, 190);
             this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
@@ -179,6 +181,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Cluster";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_3);
             // 
             // panel4
             // 

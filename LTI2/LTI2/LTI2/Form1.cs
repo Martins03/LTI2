@@ -23,7 +23,7 @@ namespace LTI2
         {
             InitializeComponent();
             this.button4.Click += new System.EventHandler(this.button4_Click);
-
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
         }
 
         public Form1(HttpClient httpClient, string baseUrl)
@@ -47,7 +47,71 @@ namespace LTI2
                 MessageBox.Show("Erro ao contactar API Kubernetes:\n" + ex.Message);
             }
         }
+        private async void CriarInterfaceDashboard()
+        {
+            panel5.Controls.Clear();
 
+            var lblTitulo = new Label
+            {
+                Text = "Dashboard do Cluster Kubernetes",
+                Font = new Font("Segoe UI", 16, FontStyle.Bold),
+                Location = new Point(20, 20),
+                AutoSize = true
+            };
+            panel5.Controls.Add(lblTitulo);
+
+            var dados = await ObterResumoCluster();
+
+            int y = 70;
+            foreach (var dado in dados)
+            {
+                var lbl = new Label
+                {
+                    Text = $"{dado.Key}: {dado.Value}",
+                    Font = new Font("Segoe UI", 12),
+                    Location = new Point(40, y),
+                    AutoSize = true
+                };
+                panel5.Controls.Add(lbl);
+                y += 35;
+            }
+        }
+
+        private async Task<Dictionary<string, int>> ObterResumoCluster()
+        {
+            var resumo = new Dictionary<string, int>();
+
+            try
+            {
+                var nodes = await ObterContagem("/api/v1/nodes");
+                var pods = await ObterContagem("/api/v1/pods");
+                var namespaces = await ObterContagem("/api/v1/namespaces");
+                var services = await ObterContagem("/api/v1/services");
+                var deployments = await ObterContagem("/apis/apps/v1/deployments");
+
+                resumo["Nodes"] = nodes;
+                resumo["Namespaces"] = namespaces;
+                resumo["Pods"] = pods;
+                resumo["Deployments"] = deployments;
+                resumo["Services"] = services;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao obter dados do cluster: " + ex.Message);
+            }
+
+            return resumo;
+        }
+
+        private async Task<int> ObterContagem(string endpoint)
+        {
+            var response = await _httpClient.GetAsync($"{_baseUrl}{endpoint}");
+            response.EnsureSuccessStatusCode();
+
+            var json = await response.Content.ReadAsStringAsync();
+            dynamic result = Newtonsoft.Json.JsonConvert.DeserializeObject(json);
+            return result.items.Count;
+        }
         private void CriarInterfacePods()
         {
             panel5.Controls.Clear(); // Limpa o conteúdo do painel principal
@@ -118,7 +182,7 @@ namespace LTI2
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            CriarInterfaceDashboard();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -171,5 +235,14 @@ namespace LTI2
             CriarInterfacePods();
         }
 
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -12,3 +12,17 @@ C:\Users\afons\source\repos\Martins03\LTI2\LTI2\LTI2\obj\Debug\LTI2.LoginForm.re
 C:\Users\afons\source\repos\Martins03\LTI2\LTI2\LTI2\bin\Debug\Newtonsoft.Json.dll
 C:\Users\afons\source\repos\Martins03\LTI2\LTI2\LTI2\bin\Debug\Newtonsoft.Json.xml
 C:\Users\afons\source\repos\Martins03\LTI2\LTI2\LTI2\obj\Debug\LTI2.csproj.Up2Date
+C:\Users\afons\OneDrive\Ambiente de Trabalho\LTI2\LTI2\LTI2\LTI2\bin\Debug\LTI2.exe.config
+C:\Users\afons\OneDrive\Ambiente de Trabalho\LTI2\LTI2\LTI2\LTI2\bin\Debug\LTI2.exe
+C:\Users\afons\OneDrive\Ambiente de Trabalho\LTI2\LTI2\LTI2\LTI2\bin\Debug\LTI2.pdb
+C:\Users\afons\OneDrive\Ambiente de Trabalho\LTI2\LTI2\LTI2\LTI2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\afons\OneDrive\Ambiente de Trabalho\LTI2\LTI2\LTI2\LTI2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\afons\OneDrive\Ambiente de Trabalho\LTI2\LTI2\LTI2\LTI2\obj\Debug\LTI2.csproj.AssemblyReference.cache
+C:\Users\afons\OneDrive\Ambiente de Trabalho\LTI2\LTI2\LTI2\LTI2\obj\Debug\LTI2.Form1.resources
+C:\Users\afons\OneDrive\Ambiente de Trabalho\LTI2\LTI2\LTI2\LTI2\obj\Debug\LTI2.LoginForm.resources
+C:\Users\afons\OneDrive\Ambiente de Trabalho\LTI2\LTI2\LTI2\LTI2\obj\Debug\LTI2.Properties.Resources.resources
+C:\Users\afons\OneDrive\Ambiente de Trabalho\LTI2\LTI2\LTI2\LTI2\obj\Debug\LTI2.csproj.GenerateResource.cache
+C:\Users\afons\OneDrive\Ambiente de Trabalho\LTI2\LTI2\LTI2\LTI2\obj\Debug\LTI2.csproj.CoreCompileInputs.cache
+C:\Users\afons\OneDrive\Ambiente de Trabalho\LTI2\LTI2\LTI2\LTI2\obj\Debug\LTI2.csproj.Up2Date
+C:\Users\afons\OneDrive\Ambiente de Trabalho\LTI2\LTI2\LTI2\LTI2\obj\Debug\LTI2.exe
+C:\Users\afons\OneDrive\Ambiente de Trabalho\LTI2\LTI2\LTI2\LTI2\obj\Debug\LTI2.pdb
