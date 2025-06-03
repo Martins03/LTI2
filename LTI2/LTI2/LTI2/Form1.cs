@@ -39,6 +39,8 @@ namespace LTI2
                 var response = await _httpClient.GetAsync($"{_baseUrl}/api/v1/nodes");
                 response.EnsureSuccessStatusCode();
 
+                MessageBox.Show("Ligação bem sucedida ao cluster!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
             catch (Exception ex)
             {
@@ -70,7 +72,7 @@ namespace LTI2
                     Location = new Point(40, y),
                     AutoSize = true
                 };
-                panel5.Controls.Add(lbl);
+                mainContentPanel.Controls.Add(lbl);
                 y += 35;
             }
         }
