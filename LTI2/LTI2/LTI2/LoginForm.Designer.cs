@@ -22,12 +22,14 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.lblIP = new System.Windows.Forms.Label();
             this.lblPort = new System.Windows.Forms.Label();
+            this.lblToken = new System.Windows.Forms.Label();
+            this.txtToken = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtIP
             // 
             this.txtIP.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtIP.Location = new System.Drawing.Point(194, 71);
+            this.txtIP.Location = new System.Drawing.Point(194, 41);
             this.txtIP.Name = "txtIP";
             this.txtIP.Size = new System.Drawing.Size(230, 43);
             this.txtIP.TabIndex = 1;
@@ -35,7 +37,7 @@
             // txtPort
             // 
             this.txtPort.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtPort.Location = new System.Drawing.Point(194, 160);
+            this.txtPort.Location = new System.Drawing.Point(194, 102);
             this.txtPort.Name = "txtPort";
             this.txtPort.Size = new System.Drawing.Size(230, 43);
             this.txtPort.TabIndex = 3;
@@ -57,7 +59,7 @@
             // lblIP
             // 
             this.lblIP.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblIP.Location = new System.Drawing.Point(64, 71);
+            this.lblIP.Location = new System.Drawing.Point(64, 41);
             this.lblIP.Name = "lblIP";
             this.lblIP.Size = new System.Drawing.Size(128, 43);
             this.lblIP.TabIndex = 0;
@@ -66,11 +68,30 @@
             // lblPort
             // 
             this.lblPort.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblPort.Location = new System.Drawing.Point(64, 160);
+            this.lblPort.Location = new System.Drawing.Point(64, 102);
             this.lblPort.Name = "lblPort";
             this.lblPort.Size = new System.Drawing.Size(100, 43);
             this.lblPort.TabIndex = 2;
             this.lblPort.Text = "Porta:";
+            // 
+            // lblToken
+            // 
+            this.lblToken.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblToken.Location = new System.Drawing.Point(64, 166);
+            this.lblToken.Name = "lblToken";
+            this.lblToken.Size = new System.Drawing.Size(96, 47);
+            this.lblToken.TabIndex = 4;
+            this.lblToken.Text = "Token:";
+            this.lblToken.Click += new System.EventHandler(this.lblToken_Click);
+            // 
+            // txtToken
+            // 
+            this.txtToken.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtToken.Location = new System.Drawing.Point(194, 166);
+            this.txtToken.Multiline = true;
+            this.txtToken.Name = "txtToken";
+            this.txtToken.Size = new System.Drawing.Size(230, 40);
+            this.txtToken.TabIndex = 5;
             // 
             // LoginForm
             // 
@@ -79,6 +100,8 @@
             this.Controls.Add(this.txtIP);
             this.Controls.Add(this.lblPort);
             this.Controls.Add(this.txtPort);
+            this.Controls.Add(this.lblToken);
+            this.Controls.Add(this.txtToken);
             this.Controls.Add(this.btnLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -89,5 +112,8 @@
             this.PerformLayout();
 
         }
+
+        private System.Windows.Forms.Label lblToken;
+        private System.Windows.Forms.TextBox txtToken;
     }
 }
